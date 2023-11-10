@@ -1,0 +1,75 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '56977509045@s.whatsapp.net',
+    fromMe: false,
+    id: '0EF69A5C968D7E9A1B576FAC767E8B3A',
+    participant: undefined
+  },
+  messageTimestamp: 1699577813,
+  pushName: 'Birna Rojas',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'Jajajajajaja bueno cuando pueda boy directamente al banco con ese papel y ya si me lo devuelven gloria a Dios y si no gloria a Dios tanbien',
+      previewType: 0,
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Jajajajajaja bueno cuando pueda boy directamente al banco con ese papel y ya si me lo devuelven gloria a Dios y si no gloria a Dios tanbien',
+  from: '56977509045'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56977509045@s.whatsapp.net',
+    fromMe: false,
+    id: '1DA5FDB87884135C21728EF398E39CE6',
+    participant: undefined
+  },
+  messageTimestamp: 1699577837,
+  pushName: 'Birna Rojas',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'Boy a tratar de llamar mañana tenprano',
+      previewType: 0,
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Boy a tratar de llamar mañana tenprano',
+  from: '56977509045'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56977509045@s.whatsapp.net',
+    fromMe: false,
+    id: '649CA5F4FE06CEAC497F2C6736F43949',
+    participant: undefined
+  },
+  messageTimestamp: 1699578021,
+  pushName: 'Birna Rojas',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'O boy al banco cuando tenga un día y si no se los dejo a Dios dise su palabra yo pagaré dise el señor el paga y cobra por mi',
+      previewType: 0,
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'O boy al banco cuando tenga un día y si no se los dejo a Dios dise su palabra yo pagaré dise el señor el paga y cobra por mi',
+  from: '56977509045'
+}
