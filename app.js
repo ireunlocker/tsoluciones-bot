@@ -9,7 +9,7 @@ const flowSecundario = addKeyword(['s', 'salir' ]).addAnswer(['📄 Gracias, Te 
                 '*Recuerde que nuestro horario de atencion de es lunes a Viernes de 9.30: a 6.00 pm*',
                 '*Los sábados de 10.00 a 5.00 pm*', 
 ])
-const flowReiniciar = addKeyword(['r', 'reiniciar' ]).addAnswer([
+const flowReiniciar = addKeyword(['v', 'volver' ]).addAnswer([
                 '📄 Bienvenido escriba  *¡Hola!*',
                 '*Recuerde que nuestro horario de atencion de es lunes a Viernes de 9:30 a 6.00 pm*',
                 '*Los sábados de 10.00 a 5.00 pm*', 
@@ -21,7 +21,7 @@ const flowEnviar = addKeyword(['']).addAnswer(
         '\n*Recuerde que nuestro horario de atención de es lunes a Viernes de 9:30 a 6:00 pm*',
         '*Los sábados de 10:00 a 5:00 pm*',
         '*Espere atento, lo atenderemos a la brevedad*',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -32,7 +32,7 @@ const flowOtroCambio = addKeyword(['9']).addAnswer(
     [
         '📄 Indíquenos los detalles de su cambio:',
         '*Enviar a:* (Ingrese el destino)',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -45,7 +45,7 @@ const flowChileBrasilOtro = addKeyword(['4']).addAnswer(
     [
         '📄 Ya le consultamos si esta opción es válida para Chile-Brasil:',
         '*En breve nuestro operador se pondrá en contacto con usted*',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -58,7 +58,7 @@ const flowChileBrasilPago = addKeyword(['1', '2', '3']).addAnswer(
         '\n*Recuerde que nuestro horario de atención de es lunes a Viernes de 9:30 a 6:00 pm*',
         '*Los sábados de 10:00 a 5:00 pm*',
         '*Espere atento, lo atenderemos a la brevedad*',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -72,7 +72,7 @@ const flowChileBrasil = addKeyword(['8']).addAnswer(
         '*2.* Cuenta vista ',
         '*3.* Criptomonedas',
         '*4.* Otro',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -85,7 +85,7 @@ const flowBrasilChileOtro = addKeyword(['4']).addAnswer(
     [
         '📄 Ya le consultamos si esta opción es válida para Brasil-Chile:',
         '*En breve nuestro operador se pondrá en contacto con usted*',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -99,7 +99,7 @@ const flowBrasilChilePago = addKeyword(['1', '2', '3']).addAnswer(
         '\n*Recuerde que nuestro horario de atención de es lunes a Viernes de 9:30 a 6:00 pm*',
         '*Los sábados de 10:00 a 5:00 pm*',
         '*Espere atento, lo atenderemos a la brevedad*',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -114,7 +114,7 @@ const flowBrasilChile = addKeyword(['7']).addAnswer(
         '*3.* Tarjeta de Crédito',
         '*4.* Criptomonedas ',
         '*5.* Otro',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -127,7 +127,7 @@ const flowPeruBrasilOtro = addKeyword(['5']).addAnswer(
     [
         '📄 Ya le consultamos si esta opción es válida para Peru-Brasil:',
         '*En breve nuestro operador se pondrá en contacto con usted*',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -141,7 +141,7 @@ const flowPeruBrasilPago = addKeyword(['1', '2', '3','4']).addAnswer(
         '\n*Recuerde que nuestro horario de atención de es lunes a Viernes de 9:30 a 6:00 pm*',
         '*Los sábados de 10:00 a 5:00 pm*',
         '*Espere atento, lo atenderemos a la brevedad*',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -156,7 +156,7 @@ const flowPeruBrasil = addKeyword(['6']).addAnswer(
         '*3.* Yape',
         '*4.* Plin ',
         '*5.* Otro',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -170,7 +170,7 @@ const flowBrasilPeruOtro = addKeyword(['5']).addAnswer(
     [
         '📄 Ya le consultamos si esta opción es válida para Brasil-Peru:',
         '*En breve nuestro operador se pondrá en contacto con usted*',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -184,7 +184,7 @@ const flowBrasilPeruPago = addKeyword(['1', '2', '3','4']).addAnswer(
         '\n*Recuerde que nuestro horario de atención de es lunes a Viernes de 9:30 a 6:00 pm*',
         '*Los sábados de 10:00 a 5:00 pm*',
         '*Espere atento, lo atenderemos a la brevedad*',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -199,7 +199,7 @@ const flowBrasilPeru = addKeyword(['5']).addAnswer(
         '*3.* Tarjeta de Crédito',
         '*4.* Criptomonedas ',
         '*5.* Otro',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -212,7 +212,7 @@ const flowColombiaBrasilOtro = addKeyword(['3']).addAnswer(
     [
         '📄 Ya le consultamos si esta opción es válida para Colombia-Brasil:',
         '*En breve nuestro operador se pondrá en contacto con usted*',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -226,7 +226,7 @@ const flowColombiaBrasilPago = addKeyword(['1', '2',]).addAnswer(
         '\n*Recuerde que nuestro horario de atención de es lunes a Viernes de 9:30 a 6:00 pm*',
         '*Los sábados de 10:00 a 5:00 pm*',
         '*Espere atento, lo atenderemos a la brevedad*',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -239,7 +239,7 @@ const flowColombiaBrasil = addKeyword(['4']).addAnswer(
         '*1.* Bancolombia',
         '*2.* Criptomonedas',
         '*3.* Otro',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -253,7 +253,7 @@ const flowBrasilColombiaOtro = addKeyword(['5']).addAnswer(
     [
         '📄 Ya le consultamos si esta opción es válida para Brasil-Colombia:',
         '*En breve nuestro operador se pondrá en contacto con usted*',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -267,7 +267,7 @@ const flowflowBrasilColombiaPago = addKeyword(['1', '2', '3','4']).addAnswer(
         '\n*Recuerde que nuestro horario de atención de es lunes a Viernes de 9:30 a 6:00 pm*',
         '*Los sábados de 10:00 a 5:00 pm*',
         '*Espere atento, lo atenderemos a la brevedad*',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -282,7 +282,7 @@ const flowBrasilColombia = addKeyword(['3']).addAnswer(
         '*3.* Tarjeta de Crédito',
         '*4.* Criptomonedas ',
         '*5.* Otro',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -296,7 +296,7 @@ const flowVzlaBrasilOtro = addKeyword(['4']).addAnswer(
     [
         '📄 Ya le consultamos si esta opcion es valida para Venezuela-Brasil:',
         '*En breve nuestro operador se pondrá en contacto con usted*',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -310,7 +310,7 @@ const flowVzlaBrasilPago = addKeyword(['1', '2','3',]).addAnswer(
         '\n*Recuerde que nuestro horario de atención de es lunes a Viernes de 9:30 a 6:00 pm*',
         '*Los sábados de 10:00 a 5:00 pm*',
         '*Espere atento, lo atenderemos a la brevedad*',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -324,7 +324,7 @@ const flowVzlaBrasil = addKeyword(['2']).addAnswer(
         '*2.* Transferéncia Bancária',
         '*3.* Zelle',
         '*4.* Otro',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
            
     ],
     null,
@@ -337,7 +337,7 @@ const flowBrasilVzlaOtro = addKeyword(['4']).addAnswer(
     [
         '📄 Ya le consultamos si esta opcion es valida para Venezuela-Brasil:',
         '*En breve nuestro operador se pondrán en contacto con usted*',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -350,7 +350,7 @@ const flowBrasilVzlapago = addKeyword(['1', '2','3',]).addAnswer(
         '\n*Recuerde que nuestro horario de atención de es lunes a Viernes de 9:30 a 6:00 pm*',
         '*Los sábados de 10:00 a 5:00 pm*',
         '*Espere atento, lo atenderemos a la brevedad*',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -364,7 +364,7 @@ const flowBrasilVzla = addKeyword(['1']).addAnswer(
         '*2.* Pix',
         '*3.* Tarjeta de Crédito',
         '*4.* Otro',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -386,7 +386,7 @@ const flowCambios = addKeyword(['1','cambios', 'cambio']).addAnswer(
         '👉 *7.* Brasil-Chile',
         '👉 *8.* Chile-Brasil',
         '👉 *9.* Otros',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -404,7 +404,7 @@ const flowRecargasOtros = addKeyword(['0']).addAnswer(
     [
         '📄 Por favor indiquenos el tipo de recarga:',
         '*(indique el tipo de recarga)*',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -418,7 +418,7 @@ const flowRecargasPagos = addKeyword(['1', '2','3','4','5',]).addAnswer(
         '\n*Recuerde que nuestro horario de atención de es lunes a Viernes de 9:30 a 6:00 pm*',
         '*Los sábados de 10:00 a 5:00 pm*',
         '*Espere atento, lo atenderemos a la brevedad*',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -435,7 +435,7 @@ const flowRecargas = addKeyword(['2', 'recarga', 'recargas','recarga de saldo'])
             '👉 *5.* *Impuestos*',
             '👉 *0.* *Otros*',
 
-            '\n*S* Para salir o *R* para reiniciar.'
+            '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -444,7 +444,7 @@ const flowRecargas = addKeyword(['2', 'recarga', 'recargas','recarga de saldo'])
 const flowGracias = addKeyword(['gracias']).addAnswer(
     [
         '🚀 Estamos trabajando en esta opción',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -459,7 +459,7 @@ const flowProductoConsulta = addKeyword(['']).addAnswer(
         '\n*Recuerde que nuestro horario de atención de es lunes a Viernes de 9:30 a 6:00 pm*',
         '*Los sábados de 10:00 a 5:00 pm*',
         '*Espere atento, lo atenderemos a la brevedad*',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     
     null,
@@ -473,7 +473,7 @@ const flowProductos = addKeyword(['3','productos','producto']).addAnswer(
         '🤪 Tenemos los mejores productos venezolanos al mejor precio.',
         '📄 Indíquenos en que producto esta interesado:',
         '*Producto:* (Ingrese producto)',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -487,7 +487,7 @@ const flowTipoApuestas = addKeyword(['1', '2','3','4']).addAnswer(
         '*A continuacion te dejamos el siguiente link de nuestro operador*',
         '*encargado de esta area, *',
         '*Entra aqui => https://wa.me/5575992665344 *',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
@@ -503,7 +503,7 @@ const flowApuestas = addKeyword(['4','apuestas']).addAnswer(
         '👉 *3.* *Jugar triples* ',
         '👉 *4.* *Animalitos de loterias venezolana* ',
         '👉 *0.* *Otro*',
-        '\n*S* Para salir o *R* para reiniciar.'
+        '\n*S* Para salir o *V* para volver al inicio.'
     ],
     null,
     null,
