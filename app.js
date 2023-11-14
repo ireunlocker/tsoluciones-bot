@@ -376,8 +376,8 @@ const flowBrasilVzla = addKeyword(['1']).addAnswer(
 const flowCambios = addKeyword(['1','cambios', 'cambio']).addAnswer(
     [
         '📄 Aquí encontrarás la mejor tasa del mercado',
-        'Elige el número correspondiente al tipo de cambio deseado:',
-        '👉 *1.* Brasil-Venezuela',
+        '\nElige el número correspondiente al tipo de cambio deseado:',
+        '👉\n *1.* Brasil-Venezuela',
         '👉 *2.* Venezuela-Brasil',
         '👉 *3.* Brasil-Colombia',
         '👉 *4.* Colombia-Brasil',
@@ -497,7 +497,7 @@ const flowTipoApuestas = addKeyword(['1', '2','3','4']).addAnswer(
 //logica de apuestas
 const flowApuestas = addKeyword(['4','apuestas']).addAnswer(
     ['🤪 Únete, a las mejores ofertas', 
-        '🙌 Entretenimiento a tu medida, escoje el servicio.',
+        '\n🙌 Entretenimiento a tu medida, escoje el servicio.',
         '👉 *1.* *Apuestas deportivas* ',
         '👉 *2.* *Parley* ',
         '👉 *3.* *Jugar triples* ',
@@ -516,12 +516,12 @@ const flowPrincipal = addKeyword(['hola',
                                     'holas', 
                                     'buenas',
                                     'buenos dias',
-                                    'buenas tardes'])
+                                    'buenas tardes', 'buenas noches','hola como estas','.','oi'])
                                 
     .addAnswer("¡Hola! 👋 Bienvenido a TSolucionBrasil. ¿Cómo podemos ayudarte hoy?")
     .addAnswer(
         [
-            'Tenemos disponibles los siguientes servicios',
+            '\nTenemos disponibles los siguientes servicios',
             '👉 *1.* *Cambios* ',
             '👉 *2.* *Recargar Saldo* ',
             '👉 *3.* *Productos Venezolanos* ',
