@@ -142,7 +142,7 @@ const flowProductosConsulta = addKeyword(['']).addAnswer(
     [
         '✅ Su consultamos fue recibida con éxito.',
         '*En breve nuestro operador se pondrá en contacto con usted.*',
-        '\n*S* Para salir o *R* para volver al inicio.'
+        //'\n*S* Para salir o *R* para volver al inicio.'
         
     ],
     null,
@@ -206,7 +206,7 @@ const flowRecargasPagos = addKeyword(['1', '2','3','4','5',]).addAnswer(
     [
         '✅ Su consultamos fue recibida con éxito.',
         '*En breve nuestro operador se pondrá en contacto con usted.*',
-        '\n*S* Para salir o *R* para volver al inicio.'
+        //'\n*S* Para salir o *R* para volver al inicio.'
         
     ],
     null,
@@ -335,7 +335,7 @@ const flowChileBrasilPago = addKeyword(['1', '2', '3']).addAnswer(
         '*Espere atento, ya nuestro operador se pondra en contacto.*',
         '\n*Recuerde que nuestro horario de atencion de es lunes a Viernes de 9:30 a 18:00* Hora',
         '\n*Sabados de 9:30 a 17:00* Hora.', 
-        '\n*S* Para salir o *R* para volver al inicio.'
+        //'\n*S* Para salir o *R* para volver al inicio.'
         
     ],
     null,
@@ -419,7 +419,7 @@ const flowBrasilChilePago = addKeyword(['1', '2', '3','4']).addAnswer(
         '*Espere atento, ya nuestro operador se pondra en contacto.*',
         '\n*Recuerde que nuestro horario de atencion de es lunes a Viernes de 9:30 a 18:00* Hora',
         '\n*Sabados de 9:30 a 17:00* Hora.', 
-        '\n*S* Para salir o *R* para volver al inicio.'
+        //'\n*S* Para salir o *R* para volver al inicio.'
         
     ],
     null,
@@ -505,7 +505,7 @@ const flowPeruBrasilPago = addKeyword(['1', '2', '3','4']).addAnswer(
         '*Espere atento, ya nuestro operador se pondra en contacto.*',
         '\n*Recuerde que nuestro horario de atencion de es lunes a Viernes de 9:30 a 18:00* Hora',
         '\n*Sabados de 9:30 a 17:00* Hora.', 
-        '\n*S* Para salir o *R* para volver al inicio.'
+        //'\n*S* Para salir o *R* para volver al inicio.'
         
     ],
     null,
@@ -591,7 +591,7 @@ const flowBrasilPeruPago = addKeyword(['1', '2', '3','4']).addAnswer(
         '*Espere atento, ya nuestro operador se pondra en contacto.*',
         '\n*Recuerde que nuestro horario de atencion de es lunes a Viernes de 9:30 a 18:00* Hora',
         '\n*Sabados de 9:30 a 17:00* Hora.', 
-        '\n*S* Para salir o *R* para volver al inicio.'
+        //'\n*S* Para salir o *R* para volver al inicio.'
         
     ],
     null,
@@ -676,7 +676,7 @@ const flowColombiaBrasilPago = addKeyword(['1', '2']).addAnswer(
         '*Espere atento, ya nuestro operador se pondra en contacto.*',
         '\n*Recuerde que nuestro horario de atencion de es lunes a Viernes de 9:30 a 18:00* Hora',
         '\n*Sabados de 9:30 a 17:00* Hora.', 
-        '\n*S* Para salir o *R* para volver al inicio.'
+        //'\n*S* Para salir o *R* para volver al inicio.'
         
     ],
     null,
@@ -762,7 +762,7 @@ const flowflowBrasilColombiaPago = addKeyword(['1', '2', '3','4']).addAnswer(
         '*Espere atento, ya nuestro operador se pondra en contacto.*',
         '\n*Recuerde que nuestro horario de atencion de es lunes a Viernes de 9:30 a 18:00* Hora',
         '\n*Sabados de 9:30 a 17:00* Hora.', 
-        '\n*S* Para salir o *R* para volver al inicio.'
+        //'\n*S* Para salir o *R* para volver al inicio.'
         
     ],
     null,
@@ -848,7 +848,7 @@ const flowVzlaBrasilPago = addKeyword(['1', '2', '3']).addAnswer(
         '*Espere atento, ya nuestro operador se pondra en contacto.*',
         '\n*Recuerde que nuestro horario de atencion de es lunes a Viernes de 9:30 a 18:00* Hora',
         '\n*Sabados de 9:30 a 17:00* Hora.', 
-        '\n*S* Para salir o *R* para volver al inicio.'
+        //'\n*S* Para salir o *R* para volver al inicio.'
         
     ],
     null,
@@ -933,12 +933,9 @@ const flowBrasilVzlaPago = addKeyword(['1', '2', '3']).addAnswer(
         '✅ Excelente opción 🇧🇷Brasil-Venezuela🇻🇪:',
         '*Espere atento, ya nuestro operador se pondra en contacto.*',
         '\n*Recuerde que nuestro horario de atencion de es lunes a Viernes de 9:30 a 18:00* Hora',
-        '\n*Sabados de 9:30 a 17:00* Hora.', 
-        '\n*S* Para salir o *R* para volver al inicio.'
-        
+        '\n*Sabados de 9:30 a 17:00* Hora.',        
     ],
     null,
-    
     async (ctx) => {
     
         isBotPaused = true;
@@ -955,7 +952,7 @@ const flowBrasilVzlaPago = addKeyword(['1', '2', '3']).addAnswer(
             console.log('Activar flujo principal después de la pausa');
         }
     },
-    
+    [flowSalir,flowReiniciar]
 );
 
 const flowBrasilVzla = addKeyword(['1']).addAnswer(

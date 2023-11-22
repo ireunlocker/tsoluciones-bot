@@ -2,30 +2,10 @@
   key: {
     remoteJid: '59896887643@s.whatsapp.net',
     fromMe: false,
-    id: '3EB027D76837F9EC864781',
+    id: '3EB04598874A45BC6A3308',
     participant: undefined
   },
-  messageTimestamp: 1700633402,
-  pushName: 'kerwyn',
-  broadcast: false,
-  message: Message {
-    conversation: 'hola',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'hola',
-  from: '59896887643'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '59896887643@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0047404140BC61545B6',
-    participant: undefined
-  },
-  messageTimestamp: 1700633404,
+  messageTimestamp: 1700661969,
   pushName: 'kerwyn',
   broadcast: false,
   message: Message {
@@ -39,8 +19,8 @@
   from: '59896887643'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_778aa685-edb1-4a77-ba9e-fc2241ddd0a6',
-  keyword: 'key_934d5f23-56d4-43d1-9307-725d0dd60ff0',
+  ref: 'ans_08798240-c700-4eb0-941d-a568519ec32c',
+  keyword: 'key_ce08f4af-f9f2-4ea4-bed8-56d07a5b8c61',
   answer: '¡Hola! 👋 Bienvenido a TSolucionBrasil. ¿Cómo podemos ayudarte hoy?',
   options: {
     media: null,
@@ -54,29 +34,11 @@
     keyword: {},
     callback: false
   },
-  refSerialize: 'b435743cd77a7916a80ad67fc00cb7bc'
+  refSerialize: '32f5ce3606bac497b359b6b359560f70'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_778aa685-edb1-4a77-ba9e-fc2241ddd0a6',
-  keyword: 'key_934d5f23-56d4-43d1-9307-725d0dd60ff0',
-  answer: '¡Hola! 👋 Bienvenido a TSolucionBrasil. ¿Cómo podemos ayudarte hoy?',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: 'b435743cd77a7916a80ad67fc00cb7bc'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_9477e6b5-d8fa-415c-a031-a4ea58730a59',
-  keyword: 'ans_778aa685-edb1-4a77-ba9e-fc2241ddd0a6',
+  ref: 'ans_710d2c41-4c74-4782-860d-2c1b0913bdf7',
+  keyword: 'ans_08798240-c700-4eb0-941d-a568519ec32c',
   answer: 'Tenemos disponibles los siguientes servicios:\n' +
     '👉 *1.* *Cambios* \n' +
     '👉 *2.* *Recargar Saldo* \n' +
@@ -102,46 +64,16 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '785ff6220c7b6d6467adc6438b1ef2c5'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_9477e6b5-d8fa-415c-a031-a4ea58730a59',
-  keyword: 'ans_778aa685-edb1-4a77-ba9e-fc2241ddd0a6',
-  answer: 'Tenemos disponibles los siguientes servicios:\n' +
-    '👉 *1.* *Cambios* \n' +
-    '👉 *2.* *Recargar Saldo* \n' +
-    '👉 *3.* *Productos Venezolanos* \n' +
-    '👉 *4.* *Apuestas*\n' +
-    '\n' +
-    '*S* Para salir.',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [
-      [Object], [Object],
-      [Object], [Object],
-      [Object], [Object],
-      [Object], [Object],
-      [Object], [Object]
-    ],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '785ff6220c7b6d6467adc6438b1ef2c5'
+  refSerialize: '55c2ab0f741b9d698f7d70ba1bfdffa0'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '59896887643@s.whatsapp.net',
     fromMe: false,
-    id: '3EB0117AC15AA3539F0D6D',
+    id: '3EB00BF4787DCE53EFB716',
     participant: undefined
   },
-  messageTimestamp: 1700633409,
+  messageTimestamp: 1700661973,
   pushName: 'kerwyn',
   broadcast: false,
   message: Message {
@@ -155,8 +87,8 @@
   from: '59896887643'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_d262bff2-4bec-48a9-8748-f6f4224f7e80',
-  keyword: 'key_8e47a67b-9c92-4eb8-adc5-5bfd8e50058c',
+  ref: 'ans_6de351f5-743a-4b0a-a162-b93dee413dba',
+  keyword: 'key_e88c60c1-4981-46ea-830d-35e69d6eb204',
   answer: '💹 Aquí encontrarás la mejor tasa del mercado.\n' +
     '\n' +
     'Elige el número correspondiente al tipo de cambio deseado:\n' +
@@ -192,98 +124,38 @@
     keyword: {},
     callback: false
   },
-  refSerialize: 'f6b46a79856219f523ce6e7a9606af3e'
+  refSerialize: '5cdee78ab76f6aedd09207c436524e35'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '59896887643@s.whatsapp.net',
     fromMe: false,
-    id: '3EB050846EB6B832C1FE43',
+    id: '3EB0470AFF34A876D47376',
     participant: undefined
   },
-  messageTimestamp: 1700633420,
+  messageTimestamp: 1700661975,
   pushName: 'kerwyn',
   broadcast: false,
   message: Message {
-    conversation: 's',
+    conversation: '1',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 's',
+  body: '1',
   from: '59896887643'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_e3fe77b5-2fd2-4f21-a31d-6925aee0a390',
-  keyword: 'key_503725de-8ab3-4591-8271-4e7f78ea3727',
-  answer: '🤝 Gracia por la confianza y el apoyo, te esperamos pronto.\n' +
+  ref: 'ans_0ff865f6-c407-4936-81af-94f4dd392a19',
+  keyword: 'key_d8fddee6-e7b8-40b3-a09b-a30500e52b02',
+  answer: '📄 Por Favor elija el metodo de pago 🇧🇷Brasil-Venezuela🇻🇪:\n' +
+    '*1.* Depósito en efectivo\n' +
+    '*2.* Pix\n' +
+    '*3.* Tarjeta de Crédito\n' +
+    '*4.* Otro\n' +
     '\n' +
-    '*Recuerde que nuestro horario de atencion de es lunes a Viernes de 9:30 a 18:00* Hora\n' +
-    '\n' +
-    '*Sabados de 9:30 a 17:00* Hora.',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: 'cd4955c8a6f9c6128aa6367755db512b'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '59896887643@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0AF2D9FCD0D083D79FB',
-    participant: undefined
-  },
-  messageTimestamp: 1700633424,
-  pushName: 'kerwyn',
-  broadcast: false,
-  message: Message {
-    conversation: 'hola',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'hola',
-  from: '59896887643'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_778aa685-edb1-4a77-ba9e-fc2241ddd0a6',
-  keyword: 'key_934d5f23-56d4-43d1-9307-725d0dd60ff0',
-  answer: '¡Hola! 👋 Bienvenido a TSolucionBrasil. ¿Cómo podemos ayudarte hoy?',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: 'b435743cd77a7916a80ad67fc00cb7bc'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_9477e6b5-d8fa-415c-a031-a4ea58730a59',
-  keyword: 'ans_778aa685-edb1-4a77-ba9e-fc2241ddd0a6',
-  answer: 'Tenemos disponibles los siguientes servicios:\n' +
-    '👉 *1.* *Cambios* \n' +
-    '👉 *2.* *Recargar Saldo* \n' +
-    '👉 *3.* *Productos Venezolanos* \n' +
-    '👉 *4.* *Apuestas*\n' +
-    '\n' +
-    '*S* Para salir.',
+    '*S* Para salir o *R* para volver al inicio.',
   options: {
     media: null,
     buttons: [],
@@ -302,94 +174,45 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '785ff6220c7b6d6467adc6438b1ef2c5'
+  refSerialize: '4311295273c548e81535455768c1f8e6'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '59896887643@s.whatsapp.net',
     fromMe: false,
-    id: '3EB00D01AE221715547F94',
+    id: '3EB0F164D0F7574F8F6B15',
     participant: undefined
   },
-  messageTimestamp: 1700633429,
+  messageTimestamp: 1700661976,
   pushName: 'kerwyn',
   broadcast: false,
   message: Message {
-    conversation: '4',
+    conversation: '1',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: '4',
+  body: '1',
   from: '59896887643'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_a8988769-a508-4743-81dd-84ca50735f1e',
-  keyword: 'key_6c9c79a7-b759-4f4f-a25d-7c6992120c58',
-  answer: '🤪 Únete, a las mejores ofertas\n' +
-    '\n' +
-    '🙌 Entretenimiento a tu medida, escoje el servicio.\n' +
-    '👉 *1.* *Apuestas deportivas* \n' +
-    '👉 *2.* *Parley* \n' +
-    '👉 *3.* *Jugar triples* \n' +
-    '👉 *4.* *Animalitos de loterias venezolana* \n' +
-    '\n' +
-    '*S* Para salir o *V* para volver al inicio.',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '78d279dd303408062fdf3dba7392cb13'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '59896887643@s.whatsapp.net',
     fromMe: false,
-    id: '3EB022FA46BC6BDAF04C21',
+    id: '3EB0E6A7FCECDA31280130',
     participant: undefined
   },
-  messageTimestamp: 1700633434,
+  messageTimestamp: 1700661980,
   pushName: 'kerwyn',
   broadcast: false,
   message: Message {
-    conversation: '3',
+    conversation: '2',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: '3',
+  body: '2',
   from: '59896887643'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_b5cc79cd-7de2-42af-a3a1-65b6acdef711',
-  keyword: 'key_1c1a2317-2b9b-474d-87a9-752780a78c11',
-  answer: '📄 Excelente opción:\n' +
-    '*A continuacion te dejamos el siguiente link de nuestro operador*\n' +
-    '*encargado de esta area, *\n' +
-    '*Entra aqui => https://wa.me/5575992665344 *\n' +
-    '\n' +
-    '*S* Para salir o *R* para volver al inicio.',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [ [Object], [Object], [Object], [Object] ],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: 'cce61803299941a0aaeebe065be85ba4'
 }
