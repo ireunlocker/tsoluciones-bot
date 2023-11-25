@@ -10,6 +10,11 @@ let bloquearFlujoPrincipal = false;
 let ultimoMensajeBot = null; // Variable para almacenar el último mensaje enviado por el bot
 //let interactuarConOperadorRecientemente = false;
 
+//rastrea si el cliente a tenido tiempo sin comenzar una conversacion
+// Variable para rastrear el último tiempo que el usuario envió un mensaje
+let lastMessageTime;
+
+
 // Función para procesar mensajes simultáneos (deberías implementarla según tus necesidades)
 async function procesarMensajesSimultaneos(ctx) {
     // Implementa la lógica según tus necesidades
@@ -973,7 +978,7 @@ const flowBrasilVzla = addKeyword(['1']).addAnswer(
 const flowCambios = addKeyword(['1']).addAnswer(
     [
         '💹 Aquí encontrarás la mejor tasa del mercado.',
-        '\nElige el número correspondiente al tipo de cambio deseado:',
+        '\n Elige el número correspondiente al tipo de cambio deseado:',
         '👉 *1.* 🇧🇷Brasil-Venezuela🇻🇪',
         '👉 *2.* 🇻🇪Venezuela-Brasil🇧🇷',
         '👉 *3.* 🇧🇷Brasil-Colombia🇨🇴',
@@ -987,20 +992,12 @@ const flowCambios = addKeyword(['1']).addAnswer(
     ],
     null,
     null,
-    [flowBrasilVzla,
-    flowVzlaBrasil,
-    flowBrasilColombia,
-    flowColombiaBrasil,
-    flowBrasilPeru,
-    flowPeruBrasil,
-    flowBrasilChile,
-    flowChileBrasil,
-    flowOtroConsulta,
-    flowSalir,flowReiniciar]
+    [flowBrasilVzla,flowVzlaBrasil,flowBrasilColombia,flowColombiaBrasil,flowBrasilPeru,
+    flowPeruBrasil,flowBrasilChile,flowChileBrasil,flowOtroConsulta,flowSalir,flowReiniciar]
 );
 //fin de logica cambios
-const flowPrincipal = addKeyword(['hola','hols','ola','holas','buenas','buenos dias','buenas tardes','buenas noches','hola como estas','oi'])
-    .addAnswer("¡Hola! 👋 Bienvenido a TSolucionBrasil. ¿Cómo podemos ayudarte hoy?")
+const flowPrincipal = addKeyword(['hola','hola sara','hols','ola','holas','buenas','buenos dias','buenas tardes','buenas noches','hola como estas','oi'])
+    .addAnswer("¡Hola! 👋 Bienvenido soy sara. ¿Cómo podemos ayudarte hoy?")
     .addAnswer(
         [
             'Tenemos disponibles los siguientes servicios:',
@@ -1011,7 +1008,18 @@ const flowPrincipal = addKeyword(['hola','hols','ola','holas','buenas','buenos d
             '\n*S* Para salir.'
         ],
         null,
-        null,
+        async (ctx) => {
+            const currentTime = new Date().getTime();
+
+            // Verificar si es la primera vez que el usuario envía un mensaje o si ha pasado cierto tiempo desde el último mensaje
+            if (!lastMessageTime || (currentTime - lastMessageTime) > TIEMPO_LIMITE) {
+                // Enviar un mensaje de bienvenida o seguimiento
+                await ctx.reply("¡Hola nuevamente! 🌟 Parece que hace un tiempo que no chateamos. 😊 Para comenzar, solo saluda a Sara y sigue las indicaciones. ¡Estoy aquí para ayudarte!");
+
+                // Actualizar el tiempo del último mensaje
+                lastMessageTime = currentTime;
+            }
+        },
         [flowCambios,flowRecargas,flowProductos,flowApuestas,flowSalir]
     );
 
