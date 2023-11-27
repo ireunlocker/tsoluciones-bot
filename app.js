@@ -143,9 +143,9 @@ const flowApuestas = addKeyword(['4','apuestas']).addAnswer(
 
 const flowError = addKeyword(['']).addAnswer(
     [
-        '✅ Su consultamos fue recibida con éxito.',
-        '*En breve nuestro operador se pondrá en contacto con usted.*',
-        'Por favor escriba *!Hola Sara¡* si quieres reanudar el proceso.',
+        '🤪 Algo salió mal, por favor escriba *!Hola Sara¡* si quieres reanudar el proceso.',
+        '\n*Salir* o *Reiniciar*'
+
         //'\n*S* Para salir o *R* para volver al inicio.'
         
     ],
@@ -156,6 +156,8 @@ const flowProductos = addKeyword(['3']).addAnswer(
         '🤪 Tenemos los mejores productos venezolanos al mejor precio.',
         '📄 Indíquenos en que producto esta interesado y en breve nuestro operado, le respondera:',
         '*Ingrese producto:*',
+        '✅ Su consultamos fue recibida con éxito.',
+        '*En breve nuestro operador se pondrá en contacto con usted.*'
     ],
     null,
     async (ctx) => {
