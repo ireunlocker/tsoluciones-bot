@@ -10,11 +10,6 @@ let bloquearFlujoPrincipal = false;
 let ultimoMensajeBot = null; // Variable para almacenar el último mensaje enviado por el bot
 //let interactuarConOperadorRecientemente = false;
 
-//rastrea si el cliente a tenido tiempo sin comenzar una conversacion
-// Variable para rastrear el último tiempo que el usuario envió un mensaje
-let lastMessageTime;
-
-
 // Función para procesar mensajes simultáneos (deberías implementarla según tus necesidades)
 async function procesarMensajesSimultaneos(ctx) {
     // Implementa la lógica según tus necesidades
@@ -104,13 +99,15 @@ async function manejarMensaje(ctx) {
 
 //funciones para salir o reiniciar
 //mensaje de finalizacion o salir del ciclo
-const flowSalir = addKeyword(['s']).addAnswer([
+const flowSalir = addKeyword(['s', 'salir']).addAnswer([
             '🤝 Gracia por la confianza y el apoyo, te esperamos pronto.',
+            '🤝 Cuando desee comenzar de nuevo escriba *¡Hola Sara!* .',
             '\n*Recuerde que nuestro horario de atencion de es lunes a Viernes de 9:30 a 18:00* Hora',
             '\n*Sabados de 9:30 a 17:00* Hora.', 
+
 ])
-const flowReiniciar = addKeyword(['r']).addAnswer([
-                '👋Bienvenido escriba  *¡Hola!*',
+const flowReiniciar = addKeyword(['r','reiniciar']).addAnswer([
+                '👋Bienvenido escriba  *¡Hola Sara!* para comenzar',
                 '\n*Recuerde que nuestro horario de atencion de es lunes a Viernes de 9:30 a 18:00* Hora',
                 '\n*Sabados de 9:30 a 17:00* Hora.', 
 ])
@@ -121,7 +118,8 @@ const flowTipoApuestas = addKeyword(['1', '2','3','4']).addAnswer(
         '📄 Excelente opción:',
         '*A continuacion te dejamos el siguiente link de nuestro operador encargado de esta area*',
         'Entra aqui => https://wa.me/5575992665344 ',
-        '\n*S* Para salir o *R* para volver al inicio.'
+        '🤝 Cuando desee comenzar de nuevo escriba *¡Hola Sara!* .',
+        '\n*Salir* o *Reiniciar* .'
     ],
     null,
     null,
@@ -134,7 +132,7 @@ const flowApuestas = addKeyword(['4','apuestas']).addAnswer(
         '👉 *2.* *Parley* ',
         '👉 *3.* *Jugar triples* ',
         '👉 *4.* *Animalitos de loterias venezolana* ',
-        '\n*S* Para salir o *V* para volver al inicio.'
+        '\n*Salir* o *Reiniciar* .'
     ],
     null,
     null,
@@ -147,6 +145,7 @@ const flowProductosConsulta = addKeyword(['']).addAnswer(
     [
         '✅ Su consultamos fue recibida con éxito.',
         '*En breve nuestro operador se pondrá en contacto con usted.*',
+        'Por favor escriba *!Hola Sara¡* quiere reanudar el proceso.',
         //'\n*S* Para salir o *R* para volver al inicio.'
         
     ],
@@ -186,7 +185,7 @@ const flowRecargaOtro =  addKeyword(['0']).addAnswer(
     [
         '✅ Su consultamos fue recibida con éxito.',
         '*En breve nuestro operador se pondrá en contacto con usted.*',
-        '\n*S* Para salir o *R* para volver al inicio.'
+        '\n*Salir* o *Reiniciar* .'
         
     ],
     null,
@@ -242,7 +241,7 @@ const flowRecargas = addKeyword(['2']).addAnswer(
             '👉 *5.* *Impuestos*',
             '👉 *0.* *Otros*',
 
-            '\n*S* Para salir o *R* para reiniciar'
+            '\n*Salir* o *Reiniciar* .'
     ],
     null,
     null,
@@ -258,7 +257,7 @@ const flowOtro =  addKeyword(['1', '2']).addAnswer(
     [
         '✅ Su consultamos fue recibida con éxito.',
         '*En breve nuestro operador se pondrá en contacto con usted.*',
-        '\n*S* Para salir o *R* para volver al inicio.'
+        '\n*Salir* o *Reiniciar* .'
         
     ],
     null,
@@ -284,7 +283,7 @@ const flowOtroConsulta = addKeyword(['9']).addAnswer(
         '📄 Por favor a que pais quiere enviar',
         '*1.* Otro pais que no esta en la lista',
         '*2.* Hablar con un operador',
-        '\n*S* Para salir o *R* para volver al inicio.'
+        '\n*Salir* o *Reiniciar* .'
         
     ],
     null,
@@ -299,7 +298,7 @@ const flowChileBrasilOtro = addKeyword(['1', '2']).addAnswer(
     [
         '✅ Su consultamos fue recibida con éxito.',
         '*En breve nuestro operador se pondrá en contacto con usted*',
-        '\n*S* Para salir o *R* para volver al inicio.'
+        '\n*Salir* o *Reiniciar* .'
     ],
     null,
     async (ctx) => {
@@ -326,7 +325,7 @@ const flowChileBrasilConsulta = addKeyword(['4']).addAnswer(
         '📄 Por favor indiquenos su consulta?',
         '*1.* Mi metodo de pago no esta',
         '*2.* Consultar tasa',
-        '\n*S* Para salir o *R* para volver al inicio.'
+        '\n*Salir* o *Reiniciar* .'
         
     ],
     null,
@@ -370,7 +369,7 @@ const flowChileBrasil = addKeyword(['8']).addAnswer(
         '*2.* Cuenta vista ',
         '*3.* Criptomonedas',
         '*4.* Otro',
-        '\n*S* Para salir o *V* para volver al inicio.'
+        '\n*Salir* o *Reiniciar* .'
     ],
     null,
     null,
@@ -383,7 +382,7 @@ const flowBrasilChileOtro = addKeyword(['1', '2']).addAnswer(
     [
         '✅ Su consultamos fue recibida con éxito.',
         '*En breve nuestro operador se pondrá en contacto con usted*',
-        '\n*S* Para salir o *R* para volver al inicio.'
+        '\n*Salir* o *Reiniciar* .'
     ],
     null,
     async (ctx) => {
@@ -410,7 +409,7 @@ const flowBrasilChileConsulta = addKeyword(['5']).addAnswer(
         '📄 Por favor indiquenos su consulta?',
         '*1.* Mi metodo de pago no esta',
         '*2.* Consultar tasa',
-        '\n*S* Para salir o *R* para volver al inicio.'
+        '\n*Salir* o *Reiniciar* .'
         
     ],
     null,
@@ -456,7 +455,7 @@ const flowBrasilChile = addKeyword(['7']).addAnswer(
         '*3.* Tarjeta de Crédito',
         '*4.* Criptomonedas ',
         '*5.* Otro',
-        '\n*S* Para salir o *V* para volver al inicio.'
+        '\n*Salir* o *Reiniciar* .'
     ],
     null,
     null,
@@ -469,7 +468,7 @@ const flowPeruBrasilOtro = addKeyword(['1', '2']).addAnswer(
     [
         '✅ Su consultamos fue recibida con  éxito.',
         '*En breve nuestro operador se pondrá en contacto con usted*',
-        '\n*S* Para salir o *R* para volver al inicio.'
+        '\n*Salir* o *Reiniciar* .'
     ],
     null,
     async (ctx) => {
@@ -496,7 +495,7 @@ const flowPeruBrasilConsulta = addKeyword(['5']).addAnswer(
         '📄 Por favor indiquenos su consulta?',
         '*1.* Mi metodo de pago no esta',
         '*2.* Consultar tasa',
-        '\n*S* Para salir o *R* para volver al inicio.'
+        '\n*Salir* o *Reiniciar* .'
         
     ],
     null,
@@ -510,7 +509,6 @@ const flowPeruBrasilPago = addKeyword(['1', '2', '3','4']).addAnswer(
         '*Espere atento, ya nuestro operador se pondra en contacto.*',
         '\n*Recuerde que nuestro horario de atencion de es lunes a Viernes de 9:30 a 18:00* Hora',
         '\n*Sabados de 9:30 a 17:00* Hora.', 
-        //'\n*S* Para salir o *R* para volver al inicio.'
         
     ],
     null,
@@ -542,7 +540,7 @@ const flowPeruBrasil = addKeyword(['6']).addAnswer(
         '*3.* Yape',
         '*4.* Plin ',
         '*5.* Otro',
-        '\n*S* Para salir o *V* para volver al inicio.'
+        '\n*Salir* o *Reiniciar* .'
     ],
     null,
     null,
@@ -555,7 +553,7 @@ const flowBrasilPeruOtro = addKeyword(['1', '2']).addAnswer(
     [
         '✅ Su consultamos fue recibida con  éxito.',
         '*En breve nuestro operador se pondrá en contacto con usted*',
-        '\n*S* Para salir o *R* para volver al inicio.'
+        '\n*Salir* o *Reiniciar* .'
     ],
     null,
     async (ctx) => {
@@ -582,7 +580,7 @@ const flowBrasilPeruConsulta = addKeyword(['5']).addAnswer(
         '📄 Por favor indiquenos su consulta?',
         '*1.* Mi metodo de pago no esta',
         '*2.* Consultar tasa',
-        '\n*S* Para salir o *R* para volver al inicio.'
+        '\n*Salir* o *Reiniciar* .'
         
     ],
     null,
@@ -628,7 +626,7 @@ const flowBrasilPeru = addKeyword(['5']).addAnswer(
         '*3.* Tarjeta de Crédito',
         '*4.* Criptomonedas ',
         '*5.* Otro',
-        '\n*S* Para salir o *V* para volver al inicio.'
+        '\n*Salir* o *Reiniciar* .'
     ],
     null,
     null,
@@ -641,7 +639,7 @@ const flowColombiaBrasilOtro = addKeyword(['1', '2']).addAnswer(
     [
         '✅ Su consultamos fue recibida con  éxito.',
         '*En breve nuestro operador se pondrá en contacto con usted*',
-        '\n*S* Para salir o *R* para volver al inicio.'
+        '\n*Salir* o *Reiniciar* .'
     ],
     null,
     async (ctx) => {
@@ -668,7 +666,7 @@ const flowColombiaBrasilConsulta = addKeyword(['3']).addAnswer(
         '📄 Por favor indiquenos su consulta?',
         '*1.* Mi metodo de pago no esta',
         '*2.* Consultar tasa',
-        '\n*S* Para salir o *R* para volver al inicio.'
+        '\n*Salir* o *Reiniciar* .'
         
     ],
     null,
@@ -711,7 +709,7 @@ const flowColombiaBrasil = addKeyword(['4']).addAnswer(
         '*1.* Bancolombia',
         '*2.* Criptomonedas',
         '*3.* Otro',
-        '\n*S* Para salir o *R* para volver al inicio.'
+        '\n*Salir* o *Reiniciar* .'
     ],
     null,
     null,
@@ -753,7 +751,7 @@ const flowBrasilColombiaConsulta = addKeyword(['5']).addAnswer(
         '📄 Por favor indiquenos su consulta?',
         '*1.* Mi metodo de pago no esta',
         '*2.* Consultar tasa',
-        '\n*S* Para salir o *R* para volver al inicio.'
+        '\n*Salir* o *Reiniciar* .'
         
     ],
     null,
@@ -799,7 +797,7 @@ const flowBrasilColombia = addKeyword(['3']).addAnswer(
         '*3.* Tarjeta de Crédito',
         '*4.* Criptomonedas ',
         '*5.* Otro',
-        '\n*S* Para salir o *R* para volver al inicio.'
+        '\n*Salir* o *Reiniciar* .'
     ],
     null,
     null,
@@ -812,7 +810,7 @@ const flowVzlaBrasilOtro = addKeyword(['1','2']).addAnswer(
     [
         '✅ Su consultamos fue recibida con  éxito.',
         '*En breve nuestro operador se pondrá en contacto con usted*',
-        '\n*S* Para salir o *R* para volver al inicio.'
+        '\n*Salir* o *Reiniciar* .'
     ],
     null,
     async (ctx) => {
@@ -839,7 +837,7 @@ const flowVzlaBrasilConsulta = addKeyword(['4']).addAnswer(
         '📄 Por favor indiquenos su consulta?',
         '*1.* Mi metodo de pago no esta',
         '*2.* Consultar tasa',
-        '\n*S* Para salir o *R* para volver al inicio.'
+        '\n*Salir* o *Reiniciar* .'
         
     ],
     null,
@@ -884,7 +882,7 @@ const flowVzlaBrasil = addKeyword(['2']).addAnswer(
         '*2.* Transferéncia Bancária',
         '*3.* Zelle',
         '*4.* Otro',
-        '\n*S* Para salir o *V* para volver al inicio.'
+        '\n*Salir* o *Reiniciar* .'
            
     ],
     null,
@@ -898,7 +896,7 @@ const flowBrasilVzlaOtro = addKeyword(['1','2']).addAnswer(
     [
         '✅ Su consultamos fue recibida con  éxito.',
         '*En breve nuestro operador se pondrá en contacto con usted*',
-        '\n*S* Para salir o *R* para volver al inicio.'
+        '\n*Salir* o *Reiniciar* .'
     ],
     null,
     async (ctx) => {
@@ -925,7 +923,7 @@ const flowBrasilVzlaConsulta = addKeyword(['4']).addAnswer(
         '📄 Por favor indiquenos su consulta?',
         '*1.* Mi metodo de pago no esta',
         '*2.* Consultar tasa',
-        '\n*S* Para salir o *R* para volver al inicio.'
+        '\n*Salir* o *Reiniciar* .'
         
     ],
     null,
@@ -967,7 +965,7 @@ const flowBrasilVzla = addKeyword(['1']).addAnswer(
         '*2.* Pix',
         '*3.* Tarjeta de Crédito',
         '*4.* Otro',
-        '\n*S* Para salir o *R* para volver al inicio.'
+        '\n*Salir* o *Reiniciar* .'
     ],
     null,
     null,
@@ -988,7 +986,7 @@ const flowCambios = addKeyword(['1']).addAnswer(
         '👉 *7.* 🇧🇷Brasil-Chile🇨🇱',
         '👉 *8.* 🇨🇱Chile-Brasil🇧🇷',
         '👉 *9.* Otros',
-        '\n*S* Para salir o *R* para volver al inicio.'
+        '\n*Salir* o *Reiniciar* .'
     ],
     null,
     null,
@@ -996,8 +994,9 @@ const flowCambios = addKeyword(['1']).addAnswer(
     flowPeruBrasil,flowBrasilChile,flowChileBrasil,flowOtroConsulta,flowSalir,flowReiniciar]
 );
 //fin de logica cambios
-const flowPrincipal = addKeyword(['hola','hola sara','hols','ola','holas','buenas','buenos dias','buenas tardes','buenas noches','hola como estas','oi'])
-    .addAnswer("¡Hola! 👋 Bienvenido soy sara. ¿Cómo podemos ayudarte hoy?")
+const flowPrincipal = addKeyword(['hola','hola sara','hols','ola','holas','buenas','buenos dias','buenas tardes','buenas noches','hola como estas','oi',
+    'chance', 'oportunidad', 'envio','transferencia', 'venezuela','vzla'])
+    .addAnswer("¡Hola! 👋 soy sara Bienvenido a TsolucionesBrasil . ¿Cómo podemos ayudarte hoy?")
     .addAnswer(
         [
             'Tenemos disponibles los siguientes servicios:',
@@ -1005,27 +1004,21 @@ const flowPrincipal = addKeyword(['hola','hola sara','hols','ola','holas','buena
             '👉 *2.* *Recargar Saldo* ',
             '👉 *3.* *Productos Venezolanos* ',
             '👉 *4.* *Apuestas*',
-            '\n*S* Para salir.'
+            '\n*Salir* .'
         ],
         null,
-        async (ctx) => {
-            const currentTime = new Date().getTime();
-
-            // Verificar si es la primera vez que el usuario envía un mensaje o si ha pasado cierto tiempo desde el último mensaje
-            if (!lastMessageTime || (currentTime - lastMessageTime) > TIEMPO_LIMITE) {
-                // Enviar un mensaje de bienvenida o seguimiento
-                await ctx.reply("¡Hola nuevamente! 🌟 Parece que hace un tiempo que no chateamos. 😊 Para comenzar, solo saluda a Sara y sigue las indicaciones. ¡Estoy aquí para ayudarte!");
-
-                // Actualizar el tiempo del último mensaje
-                lastMessageTime = currentTime;
-            }
-        },
+       
         [flowCambios,flowRecargas,flowProductos,flowApuestas,flowSalir]
     );
 
 const main = async () => {
     const adapterDB = new MockAdapter();
-    const adapterFlow = createFlow([flowPrincipal]);
+    const adapterFlow = createFlow([flowPrincipal,flowCambios,flowBrasilVzla,flowBrasilVzlaPago,flowBrasilVzlaConsulta, flowBrasilVzlaOtro,flowVzlaBrasil,
+        flowVzlaBrasilPago,flowVzlaBrasilConsulta,flowVzlaBrasilOtro,flowBrasilColombia,flowflowBrasilColombiaPago,flowBrasilColombiaConsulta,flowBrasilColombiaOtro,
+        flowColombiaBrasil,flowColombiaBrasilPago,flowColombiaBrasilConsulta,flowColombiaBrasilOtro,flowBrasilPeru,flowBrasilPeruPago,flowBrasilPeruConsulta,
+        flowBrasilPeruOtro,flowPeruBrasil,flowPeruBrasilPago,flowPeruBrasilConsulta,flowPeruBrasilOtro,flowBrasilChile,flowBrasilChilePago,flowBrasilChileConsulta,
+        flowBrasilChileOtro,,flowChileBrasil,flowChileBrasilPago,flowChileBrasilConsulta,flowChileBrasilOtro,flowOtroConsulta,flowOtro,flowRecargas, flowRecargaOtro,
+        flowRecargasPagos,flowProductos,flowProductosConsulta,flowApuestas,flowTipoApuestas, flowReiniciar,flowSalir ]);
     const adapterProvider = createProvider(BaileysProvider);
 
     createBot({

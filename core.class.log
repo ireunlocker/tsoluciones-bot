@@ -1,0 +1,410 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '56941088476@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB05AD990AC09FC95252B',
+    participant: undefined
+  },
+  messageTimestamp: 1701116023,
+  pushName: 'Ireunlocker',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'hola buenas noches',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  verifiedBizName: 'Ireunlocker',
+  body: 'hola buenas noches',
+  from: '56941088476'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_70652685-381b-45a1-9064-b8e043085de7',
+  keyword: 'key_5f630f2b-e864-4968-8696-a3561513cf45',
+  answer: '¡Hola! 👋 soy sara Bienvenido a TsolucionesBrasil . ¿Cómo podemos ayudarte hoy?',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'b431d4352499175dfd11b18636d366b6'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_2733ecbb-160d-45b3-b80f-2defb4510c71',
+  keyword: 'ans_70652685-381b-45a1-9064-b8e043085de7',
+  answer: 'Tenemos disponibles los siguientes servicios:\n' +
+    '👉 *1.* *Cambios* \n' +
+    '👉 *2.* *Recargar Saldo* \n' +
+    '👉 *3.* *Productos Venezolanos* \n' +
+    '👉 *4.* *Apuestas*\n' +
+    '\n' +
+    '*Salir* .',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '8bca6836203932f3fe43b223d32eaf9c'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56941088476@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0533DF2660263CA9F8B',
+    participant: undefined
+  },
+  messageTimestamp: 1701116029,
+  pushName: 'Ireunlocker',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'hola buenos dias',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  verifiedBizName: 'Ireunlocker',
+  body: 'hola buenos dias',
+  from: '56941088476'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_70652685-381b-45a1-9064-b8e043085de7',
+  keyword: 'key_5f630f2b-e864-4968-8696-a3561513cf45',
+  answer: '¡Hola! 👋 soy sara Bienvenido a TsolucionesBrasil . ¿Cómo podemos ayudarte hoy?',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'b431d4352499175dfd11b18636d366b6'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_2733ecbb-160d-45b3-b80f-2defb4510c71',
+  keyword: 'ans_70652685-381b-45a1-9064-b8e043085de7',
+  answer: 'Tenemos disponibles los siguientes servicios:\n' +
+    '👉 *1.* *Cambios* \n' +
+    '👉 *2.* *Recargar Saldo* \n' +
+    '👉 *3.* *Productos Venezolanos* \n' +
+    '👉 *4.* *Apuestas*\n' +
+    '\n' +
+    '*Salir* .',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '8bca6836203932f3fe43b223d32eaf9c'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56941088476@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0E7BABD2B15AB9A916D',
+    participant: undefined
+  },
+  messageTimestamp: 1701116031,
+  pushName: 'Ireunlocker',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'hoa',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  verifiedBizName: 'Ireunlocker',
+  body: 'hoa',
+  from: '56941088476'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56941088476@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB021BB6397FC41EF110D',
+    participant: undefined
+  },
+  messageTimestamp: 1701116033,
+  pushName: 'Ireunlocker',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'juana',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  verifiedBizName: 'Ireunlocker',
+  body: 'juana',
+  from: '56941088476'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56941088476@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0AAA269DC310068CEFF',
+    participant: undefined
+  },
+  messageTimestamp: 1701116036,
+  pushName: 'Ireunlocker',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'juana',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  verifiedBizName: 'Ireunlocker',
+  body: 'juana',
+  from: '56941088476'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56941088476@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0E2143F8E2FCD713027',
+    participant: undefined
+  },
+  messageTimestamp: 1701116050,
+  pushName: 'Ireunlocker',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'maria me puedes hacer una tranferencia a paola y mas tarde te la paso',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  verifiedBizName: 'Ireunlocker',
+  body: 'maria me puedes hacer una tranferencia a paola y mas tarde te la paso',
+  from: '56941088476'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_70652685-381b-45a1-9064-b8e043085de7',
+  keyword: 'key_5f630f2b-e864-4968-8696-a3561513cf45',
+  answer: '¡Hola! 👋 soy sara Bienvenido a TsolucionesBrasil . ¿Cómo podemos ayudarte hoy?',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'b431d4352499175dfd11b18636d366b6'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_2733ecbb-160d-45b3-b80f-2defb4510c71',
+  keyword: 'ans_70652685-381b-45a1-9064-b8e043085de7',
+  answer: 'Tenemos disponibles los siguientes servicios:\n' +
+    '👉 *1.* *Cambios* \n' +
+    '👉 *2.* *Recargar Saldo* \n' +
+    '👉 *3.* *Productos Venezolanos* \n' +
+    '👉 *4.* *Apuestas*\n' +
+    '\n' +
+    '*Salir* .',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '8bca6836203932f3fe43b223d32eaf9c'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56941088476@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0B295F29712BC823FD1',
+    participant: undefined
+  },
+  messageTimestamp: 1701116088,
+  pushName: 'Ireunlocker',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'hace transferencia a colombia',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  verifiedBizName: 'Ireunlocker',
+  body: 'hace transferencia a colombia',
+  from: '56941088476'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_70652685-381b-45a1-9064-b8e043085de7',
+  keyword: 'key_5f630f2b-e864-4968-8696-a3561513cf45',
+  answer: '¡Hola! 👋 soy sara Bienvenido a TsolucionesBrasil . ¿Cómo podemos ayudarte hoy?',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'b431d4352499175dfd11b18636d366b6'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_2733ecbb-160d-45b3-b80f-2defb4510c71',
+  keyword: 'ans_70652685-381b-45a1-9064-b8e043085de7',
+  answer: 'Tenemos disponibles los siguientes servicios:\n' +
+    '👉 *1.* *Cambios* \n' +
+    '👉 *2.* *Recargar Saldo* \n' +
+    '👉 *3.* *Productos Venezolanos* \n' +
+    '👉 *4.* *Apuestas*\n' +
+    '\n' +
+    '*Salir* .',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '8bca6836203932f3fe43b223d32eaf9c'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56941088476@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0EADEE5F9169B842491',
+    participant: undefined
+  },
+  messageTimestamp: 1701116103,
+  pushName: 'Ireunlocker',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'puede ayudarme con una transferencia',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  verifiedBizName: 'Ireunlocker',
+  body: 'puede ayudarme con una transferencia',
+  from: '56941088476'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_70652685-381b-45a1-9064-b8e043085de7',
+  keyword: 'key_5f630f2b-e864-4968-8696-a3561513cf45',
+  answer: '¡Hola! 👋 soy sara Bienvenido a TsolucionesBrasil . ¿Cómo podemos ayudarte hoy?',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'b431d4352499175dfd11b18636d366b6'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_2733ecbb-160d-45b3-b80f-2defb4510c71',
+  keyword: 'ans_70652685-381b-45a1-9064-b8e043085de7',
+  answer: 'Tenemos disponibles los siguientes servicios:\n' +
+    '👉 *1.* *Cambios* \n' +
+    '👉 *2.* *Recargar Saldo* \n' +
+    '👉 *3.* *Productos Venezolanos* \n' +
+    '👉 *4.* *Apuestas*\n' +
+    '\n' +
+    '*Salir* .',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '8bca6836203932f3fe43b223d32eaf9c'
+}
