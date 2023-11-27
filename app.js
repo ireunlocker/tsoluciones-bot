@@ -1019,7 +1019,7 @@ const main = async () => {
         flowColombiaBrasil,flowColombiaBrasilPago,flowColombiaBrasilConsulta,flowColombiaBrasilOtro,flowBrasilPeru,flowBrasilPeruPago,flowBrasilPeruConsulta,
         flowBrasilPeruOtro,flowPeruBrasil,flowPeruBrasilPago,flowPeruBrasilConsulta,flowPeruBrasilOtro,flowBrasilChile,flowBrasilChilePago,flowBrasilChileConsulta,
         flowBrasilChileOtro,,flowChileBrasil,flowChileBrasilPago,flowChileBrasilConsulta,flowChileBrasilOtro,flowOtroConsulta,flowOtro,flowRecargas, flowRecargaOtro,
-        flowRecargasPagos,flowProductos,flowProductosConsulta,flowApuestas,flowTipoApuestas, flowReiniciar,flowSalir ]);
+        flowRecargasPagos,flowProductos,flowError,flowApuestas,flowTipoApuestas, flowReiniciar,flowSalir ]);
     const adapterProvider = createProvider(BaileysProvider);
 
     createBot({
