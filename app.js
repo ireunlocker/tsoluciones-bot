@@ -145,7 +145,7 @@ const flowProductosConsulta = addKeyword(['']).addAnswer(
     [
         '✅ Su consultamos fue recibida con éxito.',
         '*En breve nuestro operador se pondrá en contacto con usted.*',
-        'Por favor escriba *!Hola Sara¡* quiere reanudar el proceso.',
+        'Por favor escriba *!Hola Sara¡* si quieres reanudar el proceso.',
         //'\n*S* Para salir o *R* para volver al inicio.'
         
     ],
