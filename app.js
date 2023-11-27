@@ -150,22 +150,6 @@ const flowProductosConsulta = addKeyword(['']).addAnswer(
         
     ],
     null,
-    async (ctx) => {
-    
-        isBotPaused = true;
-        console.log('Bot pausado durante 1 hora');
-
-        // Utilizando async/await dentro del bloque setTimeout
-        await delay(3600000); // Pausa de 1 hora
-        isBotPaused = false;
-        console.log('Bot reactivado después de 1 hora');
-
-        // Verificar si la palabra clave está presente en el mensaje actual y activar el flujo correspondiente.
-        if (ctx.body && flowPrincipal.keywords.some(keyword => ctx.body.includes(keyword))) {
-            // Activar el flujo flowPrincipal
-            console.log('Activar flujo principal después de la pausa');
-        }
-    },
 );
 const flowProductos = addKeyword(['3']).addAnswer(
     [ 
