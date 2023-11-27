@@ -109,7 +109,7 @@ const flowSalir = addKeyword(['s', 'salir']).addAnswer([
 const flowReiniciar = addKeyword(['r','reiniciar']).addAnswer([
                 '👋Bienvenido escriba  *¡Hola Sara!* para comenzar',
                 '\n*Recuerde que nuestro horario de atencion de es lunes a Viernes de 9:30 a 18:00* Horas',
-        '\n*Sabados de 9:30 a 17:00* Horas.', 
+                '\n*Sabados de 9:30 a 17:00* Horas.', 
 ])
 //fin flujo de salir funciones para salir o reiniciar
 //logica de apuestas
@@ -141,23 +141,13 @@ const flowApuestas = addKeyword(['4','apuestas']).addAnswer(
 //fin logicca de apuestas
 //comienzo logica productos venezolanos 
 
-const flowError = addKeyword(['']).addAnswer(
+const flowProductosConsulta = addKeyword(['']).addAnswer(
     [
-        '🤪 Algo salió mal, por favor escriba *!Hola Sara¡* si quieres reanudar el proceso.',
-        '\n*Salir* o *Reiniciar*'
-
+        '✅ Su consultamos fue recibida con éxito.',
+        '*En breve nuestro operador se pondrá en contacto con usted.*',
+        'Por favor escriba *!Hola Sara¡* si quieres reanudar el proceso.',
         //'\n*S* Para salir o *R* para volver al inicio.'
         
-    ],
-    null,
-);
-const flowProductos = addKeyword(['3']).addAnswer(
-    [ 
-        '🤪 Tenemos los mejores productos venezolanos al mejor precio.',
-        '📄 Indíquenos en que producto esta interesado y en breve nuestro operado, le respondera:',
-        '*Ingrese producto:*',
-        '✅ Su consultamos fue recibida con éxito.',
-        '*En breve nuestro operador se pondrá en contacto con usted.*'
     ],
     null,
     async (ctx) => {
@@ -176,7 +166,16 @@ const flowProductos = addKeyword(['3']).addAnswer(
             console.log('Activar flujo principal después de la pausa');
         }
     },
-    [flowError,flowSalir,flowReiniciar]
+);
+const flowProductos = addKeyword(['3']).addAnswer(
+    [ 
+        '🤪 Tenemos los mejores productos venezolanos al mejor precio.',
+        '📄 Indíquenos en que producto esta interesado:',
+        '*Ingrese producto:*',
+    ],
+    null,
+    null,
+    [flowProductosConsulta,flowSalir,flowReiniciar]
 );
 
 //fin logica recargas
@@ -1000,7 +999,7 @@ const flowPrincipal = addKeyword(['hola','hola sara','hols','ola','holas','buena
     .addAnswer("¡Hola! 👋 soy Sara, el Bot🤖 de TSolucionesBrasil Bienvenido¡. *Por favor elije uno de los siguientes servicios*")
     .addAnswer(
         [
-            'Servicios disponibles:',
+            'Tenemos disponibles los siguientes servicios:',
             '👉 *1.* *Cambios* ',
             '👉 *2.* *Recargar Saldo* ',
             '👉 *3.* *Productos Venezolanos* ',
@@ -1014,12 +1013,8 @@ const flowPrincipal = addKeyword(['hola','hola sara','hols','ola','holas','buena
 
 const main = async () => {
     const adapterDB = new MockAdapter();
-    const adapterFlow = createFlow([flowPrincipal,flowCambios,flowBrasilVzla,flowBrasilVzlaPago,flowBrasilVzlaConsulta, flowBrasilVzlaOtro,flowVzlaBrasil,
-        flowVzlaBrasilPago,flowVzlaBrasilConsulta,flowVzlaBrasilOtro,flowBrasilColombia,flowflowBrasilColombiaPago,flowBrasilColombiaConsulta,flowBrasilColombiaOtro,
-        flowColombiaBrasil,flowColombiaBrasilPago,flowColombiaBrasilConsulta,flowColombiaBrasilOtro,flowBrasilPeru,flowBrasilPeruPago,flowBrasilPeruConsulta,
-        flowBrasilPeruOtro,flowPeruBrasil,flowPeruBrasilPago,flowPeruBrasilConsulta,flowPeruBrasilOtro,flowBrasilChile,flowBrasilChilePago,flowBrasilChileConsulta,
-        flowBrasilChileOtro,,flowChileBrasil,flowChileBrasilPago,flowChileBrasilConsulta,flowChileBrasilOtro,flowOtroConsulta,flowOtro,flowRecargas, flowRecargaOtro,
-        flowRecargasPagos,flowProductos,flowError,flowApuestas,flowTipoApuestas, flowReiniciar,flowSalir ]);
+    const adapterFlow = createFlow([flowPrincipal,flowCambios,flowRecargas,flowProductos,
+        flowApuestas,flowTipoApuestas, flowReiniciar,flowSalir ]);
     const adapterProvider = createProvider(BaileysProvider);
 
     createBot({
