@@ -996,7 +996,7 @@ const flowCambios = addKeyword(['1']).addAnswer(
 //fin de logica cambios
 const flowPrincipal = addKeyword(['hola','hola sara','hols','ola','holas','buenas','buenos dias','buenas tardes','buenas noches','hola como estas','oi',
     'chance', 'oportunidad', 'envio','transferencia', 'venezuela','vzla'])
-    .addAnswer("¡Hola! 👋 soy sara Bienvenido a TsolucionesBrasil . ¿Cómo podemos ayudarte hoy?")
+    .addAnswer("¡Hola! 👋 soy Sara, el Bot🤖de TsolucionesBrasil Bienvenido. ¿Cómo podemos ayudarte hoy?")
     .addAnswer(
         [
             'Tenemos disponibles los siguientes servicios:',
